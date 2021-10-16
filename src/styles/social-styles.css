@@ -1,0 +1,29 @@
+.social-handles p{
+    color: #7D8DA7;
+    font-size: 14px;
+    margin-top: -1em;
+    margin-bottom: 44px;
+  }
+  .social-handles h2{
+    font-size: 26px;
+    font-weight: bold;
+  }
+  .social-handles label{
+    font-size: 12px;
+  }
+  .social-media{
+    display: flex;
+  }
+  .social-handles div{
+    margin-bottom: 26px;
+  }
+  .twitter-input{
+    margin-right: 0;
+  }
+
+/* media queries */
+@media screen and (max-width: 500px) {
+  .social-media{
+    flex-direction: column;
+  }
+}

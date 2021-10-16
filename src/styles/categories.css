@@ -1,0 +1,19 @@
+.categories{
+    display: flex;
+  }
+  .categories .business-type {
+    margin-right: 80px;
+  }
+  .business-category label, .business-category p{
+    font-size: 12px;
+  }
+  .pos{
+    margin-top: 26px;
+  }
+
+/* media queries */
+@media screen and (max-width: 500px) {
+  .categories .business-type {
+    margin-right: 20px;
+  }
+}

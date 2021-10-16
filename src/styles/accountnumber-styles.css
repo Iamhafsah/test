@@ -1,0 +1,32 @@
+.account-number-form{
+    display: flex;
+    align-items: center;
+    margin-bottom: 48px;
+  }
+  .account-input{
+    margin-right: 80px;
+    outline: none;
+  }
+  .account-input, .select{
+    border-radius: 12px;
+    border: 1px solid #E4E9EF;
+    padding: 14px 10px;
+    margin-top: 8px;
+    min-width: 25.2vw;
+  }
+  .account-input:hover, .select:hover{
+    border-color: #006AFF;
+  }
+
+/* media queries */
+@media screen and (max-width: 500px) {
+  .account-number-form{
+    flex-direction: column;
+  }
+  .account-input{
+    padding: 14px 5px;
+    min-width: 10vw;
+    width: 100%;
+    margin-right: 5px;
+  }
+}

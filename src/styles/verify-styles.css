@@ -1,0 +1,38 @@
+.verify-account-form{
+    color: #141737;
+  }
+  .verify-account-form h2, .business-category h2{
+    margin-bottom: 39px;
+    font-size: 26px;
+    font-weight: bold;
+  }
+  .verify-account-form p, .verify-account-form label{
+    font-size: 12px;
+    font-weight: 500;
+  }
+  .verify-account-div button, .pos-options button{
+    padding: 12px 19px;
+    border-radius: 10px;
+    border: 1px solid #e0e0e0;
+    background-color: #F5F6FA;
+    margin-right: 21px;
+    cursor: pointer;
+    transition: all 500ms;
+    margin-bottom: 44px;
+    font-size: 14px;
+    font-weight: 500;
+  }
+  
+.verify-account-div button:hover, button, .pos-options button:hover{
+    background-color: #dceaff;
+    border-color: #006aff;
+  }
+  
+ 
+/* media queries */
+@media screen and (max-width: 500px) {
+  .verify-account-div button, .pos-options button{
+    font-size: 11px;
+    padding: 12px 12px;
+  }
+}

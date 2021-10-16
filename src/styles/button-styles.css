@@ -1,0 +1,39 @@
+.page-button{
+    font-family: 'DM Sans', sans-serif;
+    color: #ffffff;
+    padding: 14px 30px;
+    border: none;
+    border-radius: 8px;
+    margin-top: 35px;
+    margin-bottom: 65px;
+    font-size: 14px;
+    font-weight: bold ;
+    cursor: pointer;
+    transition: background-color 150ms;
+    width: max-content;
+    background-color: #006AFF;
+  }
+  .blue-button{
+    background-color: #006AFF;
+  }
+  .blue-button:hover{
+    background-color: #054cb1;
+  }
+  .red-button{
+    background-color: #FF6774;
+  }
+  
+.red-button:hover{
+    background-color: #dd2837;
+  }
+
+
+  /* media queries */
+@media screen and (max-width: 500px) {
+  .red-button{
+      display: none;
+  }
+  .page-button{
+    font-size: 11px;
+  }
+}
