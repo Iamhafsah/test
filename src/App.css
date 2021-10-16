@@ -46,7 +46,8 @@ select::-ms-expand {
   justify-content: space-between;
 }
 .success{
-  font-size: 32px;
+  font-size: 28px;
+  padding: 2em;
 }
 
 
@@ -58,5 +59,8 @@ select::-ms-expand {
   .right-section{
     margin: auto;
     padding: 0 5px;
+  }
+  .success{
+    font-size: 1em;
   }
 }

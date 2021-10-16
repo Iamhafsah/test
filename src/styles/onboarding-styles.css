@@ -42,7 +42,7 @@
     color: #A5B4CB;
   }
 
-  
+
   /* media query */
   @media screen and (max-width: 1050px) {
     .onboarding-steps li{
@@ -60,6 +60,9 @@
   @media screen and (max-width: 880px) {
     .inactive-title{
         display: none;
+    }
+    .onboarding-steps{
+      margin-top: 4em;
     }
     .onboarding-steps li{
         font-size: 14px;
