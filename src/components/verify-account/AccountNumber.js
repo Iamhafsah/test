@@ -19,7 +19,6 @@ const AccountNumber = () => {
             text="Account Number"
             value={accNo} onChange={accountInputChange} setInputValue={setAccNo} required
             />
-            {accNo}
 
             <Select
             label="bank"

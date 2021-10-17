@@ -2,6 +2,7 @@
 
 .verify-account-form{
     color: #141737;
+    width: 60vw;
   }
   .verify-account-form h2, .business-category h2{
     margin-bottom: 39px;
@@ -36,5 +37,8 @@
 @media screen and (max-width: 500px) {
   .verify-account-div button, .pos-options button{
     margin-bottom: 22px;
+  }
+  .verify-account-form{
+    width: auto;
   }
 }

@@ -8,7 +8,7 @@ const empty = inputValue === '';
         <div>
             <label htmlFor={label}>{text}</label> <br/> 
             
-            <input type="text" className={`${extraStyle} ${emptyInput} account-input` }  placeholder={social ? "@" : ""} value={inputValue} onChange={!optional && handleChange} required /> <br/>
+           <input type="text" className={`${extraStyle} ${emptyInput} account-input` }  placeholder={social ? "@" : ""} value={inputValue} onChange={!optional && handleChange} required /> <br/>
         </div>
     )
 }

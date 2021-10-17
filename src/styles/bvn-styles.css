@@ -1,7 +1,7 @@
 /* styles for the bvn verification step */
 
 .bvn-input{
-    width: 59vw;
+    width: 97%;
     border-radius: 12px;
     border: 1px solid #E4E9EF;
     padding: 14px 0;
@@ -13,10 +13,10 @@
     padding: 22px 26px;
     padding-bottom: 13px;
     font-size: 12px;
-    margin-top: 28px;
+    margin-top: 16px;
     border-radius: 5px;
     margin-bottom: 48px;
-    max-width: 56.5vw;
+    max-width: 95%;
   }
   .bvn-label{
     display: flex;

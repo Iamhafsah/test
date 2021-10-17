@@ -19,6 +19,9 @@
   .social-handles .social-media{
     margin-bottom: 30px;
   }
+  .social-media input{
+    margin-bottom: 1em;
+  }
   .twitter-input{
     margin-right: 0;
   }
