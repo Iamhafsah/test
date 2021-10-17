@@ -16,8 +16,8 @@
   .social-media{
     display: flex;
   }
-  .social-handles div{
-    margin-bottom: 26px;
+  .social-handles .social-media{
+    margin-bottom: 30px;
   }
   .twitter-input{
     margin-right: 0;

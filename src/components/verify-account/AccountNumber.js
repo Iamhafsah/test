@@ -17,7 +17,7 @@ const AccountNumber = () => {
             <Input
             label="account-number"
             text="Account Number"
-            value={accNo} onChange={accountInputChange} required
+            value={accNo} onChange={accountInputChange} setInputValue={setAccNo} required
             />
             {accNo}
 
@@ -28,6 +28,7 @@ const AccountNumber = () => {
             val1="GTB"
             val2="Sterling"
             val3="Access"
+            optional
             />
         </div>
 
