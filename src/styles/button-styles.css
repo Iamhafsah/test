@@ -1,3 +1,5 @@
+/* styles for the page button */
+
 .page-button{
     font-family: 'DM Sans', sans-serif;
     color: #ffffff;
@@ -13,17 +15,14 @@
     width: max-content;
     background-color: #006AFF;
   }
-  .blue-button{
-    background-color: #006AFF;
-  }
-  .blue-button:hover{
+  .page-button:hover{
     background-color: #054cb1;
   }
   .red-button{
     background-color: #FF6774;
   }
   
-.red-button:hover{
+  .red-button:hover{
     background-color: #dd2837;
   }
 
@@ -39,6 +38,7 @@
       display: none;
   }
   .page-button{
-    font-size: 11px;
+    font-size: 12px;
+    margin-top: 0px;
   }
 }

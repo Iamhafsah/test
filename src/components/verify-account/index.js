@@ -1,11 +1,9 @@
 import { useState } from "react"
-import HorizontalBorder from "../../utils/HorizontalBorder";
 import AccountNumber from "./AccountNumber";
 import Bvn from "./Bvn";
-import Button from "../../utils/Button";
 
-const VerifyAccount = ({onHandleClick}) => {
-  const [bvn, setBvn] = useState(true)
+const VerifyAccount = () => {
+  const [bvn, setBvn] = useState(true);
   
   const onChooseBvn = (e) =>{
     e.preventDefault();
@@ -32,9 +30,6 @@ const VerifyAccount = ({onHandleClick}) => {
           <AccountNumber/>
         )}
         
-        <HorizontalBorder/>
-
-        <Button text="Continue" onHandleClick={onHandleClick}/>
       </form>
     )
 }

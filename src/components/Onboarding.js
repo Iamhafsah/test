@@ -1,16 +1,16 @@
-import { useState } from "react";
+import { useState, createContext} from "react";
 import Button from "../utils/Button";
 import OnboardingSteps from "./OnboardingSteps";
 import SwitchPages from "./SwitchPages";
 
+export const stepContext = createContext();
+
+
 function Onboarding() {
   const [step, setStep] = useState(1);
 
-  const onHandleClick= () => {
-    setStep(step + 1)
-  }
-
   return (
+    <stepContext.Provider value={{step, setStep}}>
     <div className="page-container">
 
     {/* the blue part at the left */}
@@ -19,7 +19,7 @@ function Onboarding() {
 
     <section className="right-section">
         {/* logout button */}
-        <Button text="Logout" extraStyle="red-button"/>
+        <Button logout text="Logout" extraStyle="red-button"/>
 
         {/* top section with the steps listed*/}
         <OnboardingSteps activeStep={step} setActiveStep={setStep}/>
@@ -28,10 +28,12 @@ function Onboarding() {
        {step <= 3 &&(<span className="step-tracker">Step {step} / 3</span>)}
 
         {/* The different steps of the form */}
-        <SwitchPages step={step} onHandleClick={onHandleClick}/>
+        <SwitchPages step={step}/>
+        {/* <SwitchPages step={step} onHandleClick={onHandleClick}/> */}
 
         </section>
     </div>
+    </stepContext.Provider>
   );
 }
 

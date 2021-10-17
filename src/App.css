@@ -58,9 +58,13 @@ select::-ms-expand {
   }
   .right-section{
     margin: auto;
-    padding: 0 5px;
+    padding: 10px;
+    width: 88vw;
   }
   .success{
     font-size: 1em;
+  }
+  .empty-input{
+    color:  red;
   }
 }

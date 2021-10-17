@@ -1,8 +1,15 @@
+import {useState} from 'react'
 import Select from "../utils/Select"
 import HorizontalBorder from "../utils/HorizontalBorder"
 import Button from "../utils/Button"
 
-const BusinessCategory = ({onHandleClick}) => {
+const BusinessCategory = () => {
+    const [category, setCategory] = useState('')
+    const filled = category === '' ? false : true;
+    const businessVerified = filled;
+
+    const onCategoryChange = (e) => setCategory(e.target.value)
+
     return (
         <div className="business-category">
             <h2>Business Category</h2>
@@ -16,6 +23,9 @@ const BusinessCategory = ({onHandleClick}) => {
                         val1="Food"
                         val2="Agriculture"
                         val3="Fashion"
+                        selectValue={category}
+                        onSelectChange={onCategoryChange}
+                        setSelect={setCategory}
                     />
                 </div>
 
@@ -26,6 +36,7 @@ const BusinessCategory = ({onHandleClick}) => {
                     val1="Health"
                     val2="Education"
                     val3="Finance"
+                    optional
                 />
             </div>
 
@@ -38,7 +49,7 @@ const BusinessCategory = ({onHandleClick}) => {
 
             <HorizontalBorder/>
 
-            <Button text="Complete" onHandleClick={onHandleClick} extraStyle="blue-button" />
+            <Button text="Complete" isVerified={businessVerified}/>
         </div>
     )
 }

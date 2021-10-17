@@ -1,6 +1,6 @@
+/* styles for the account number step */
+
 .account-number-form{
-    display: flex;
-    align-items: center;
     margin-bottom: 48px;
   }
   .account-input{
@@ -20,14 +20,20 @@
 
 /* media queries */
 @media screen and (max-width: 500px) {
-  .account-number-form{
-    flex-direction: column;
-  }
   .account-input{
     padding: 14px 5px;
     min-width: 10vw;
-    width: 100%;
-    margin-right: 5px;
-    margin-top: 2px;
+    width: 95%;
+    margin-right: 0px;
+    margin-bottom: -.5em;
+  }
+  .account-number-form .account-input{
+    margin-bottom: 1em;
+  }
+}
+@media screen and (min-width: 500px){
+  .account-number-form{
+    display: flex;
+    align-items: center;
   }
 }

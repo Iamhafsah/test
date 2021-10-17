@@ -1,13 +1,25 @@
+import {useState} from 'react'
 import Input from "../../utils/Input"
 import Select from "../../utils/Select"
+import HorizontalBorder from '../../utils/HorizontalBorder'
+import Button from "../../utils/Button";
 
 const AccountNumber = () => {
+    const [accNo, setAccNo] = useState('');
+    const filled = accNo === '' ? false : true;
+    const accountVerified = filled;
+
+    const accountInputChange = (e) => setAccNo(e.target.value);
+
     return (
-        <form className="account-number-form">
+        <>
+        <div className="account-number-form">
             <Input
             label="account-number"
             text="Account Number"
+            value={accNo} onChange={accountInputChange} required
             />
+            {accNo}
 
             <Select
             label="bank"
@@ -17,7 +29,12 @@ const AccountNumber = () => {
             val2="Sterling"
             val3="Access"
             />
-        </form>
+        </div>
+
+        <HorizontalBorder/>
+
+        <Button text="Continue" isVerified={accountVerified}/>
+        </>
     )
 }
 

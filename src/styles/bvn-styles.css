@@ -1,5 +1,7 @@
+/* styles for the bvn verification step */
+
 .bvn-input{
-    width: 59.3vw;
+    width: 59vw;
     border-radius: 12px;
     border: 1px solid #E4E9EF;
     padding: 14px 0;
@@ -65,15 +67,11 @@
 
    /* media queries */
 @media screen and (max-width: 500px) {
-  .bvn-label{
-    font-size: 11px;
-  }
   .bvn-input{
     width: 100%;
   }
   .bvn-reason{
-    max-width: 60vw;
-    padding: 10px 15px;
-    /* width: 90vw; */
+    max-width: 90%;
+    padding: 10px 18px;
   }
 }

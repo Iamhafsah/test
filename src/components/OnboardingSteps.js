@@ -1,5 +1,7 @@
 import BlueCheck
  from "../assets/BlueCheck";
+
+ 
 const onboardingSteps = [
     {number:1, title: "Verify Account"},
     {number:2, title: "Social Handles"},
@@ -14,11 +16,13 @@ const OnboardingSteps = ({activeStep, setActiveStep}) => {
             {onboardingSteps.map(step => {
                 const active = activeStep === step.number;
                 const completed = activeStep > step.number;
+                
+                const activeTitle = active ? "active-title" : "inactive-title";
+                const completedStep = completed ? "completed-step" : active ? "active-step" : "inactive-step";
 
                 return(
-                    <li key={step.number} className={active ? "active-title" : "inactive-title"}>
-
-                        <span className={completed ? "completed-step" : active ? "active-step" : "inactive-step"} onClick={() => setActiveStep(step.number)}>{completed ? <BlueCheck/> : (<>{step.number}</>)}</span>
+                    <li key={step.number} className={activeTitle}>
+                        <span className={completedStep} onClick={() => setActiveStep(step.number)}>{completed ? <BlueCheck/> : (<>{step.number}</>)}</span>
 
                         <span className="step-title">{step.title}</span>
                 </li>
