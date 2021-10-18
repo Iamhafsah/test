@@ -35,9 +35,6 @@
     }
   }
 @media screen and (max-width: 500px) {
-  .red-button{
-      display: none;
-  }
   .page-button{
     font-size: 12px;
     margin-top: 0px;
