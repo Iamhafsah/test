@@ -7,7 +7,7 @@
     border: none;
     border-radius: 8px;
     margin-top: 35px;
-    margin-bottom: 65px;
+    margin-bottom: 10px;
     font-size: 14px;
     font-weight: bold ;
     cursor: pointer;
@@ -20,6 +20,7 @@
   }
   .red-button{
     background-color: #FF6774;
+    margin-bottom: 55px;
   }
   
   .red-button:hover{
