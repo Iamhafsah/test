@@ -2,7 +2,7 @@ import { useState, createContext} from "react";
 import Button from "../utils/Button";
 import OnboardingSteps from "./OnboardingSteps";
 import SwitchPages from "./SwitchPages";
-
+import image from "../assets/card-image.png"
 
 export const stepContext = createContext();
 
@@ -16,7 +16,7 @@ function Onboarding() {
 
     {/* the blue part at the left */}
     <div className="left-part">
-      <img src="../assets/card-image.png" alt="hand and cards on a table" />
+      <img src={image} alt="hand and cards on a table" />
     </div>
 
     <section className="right-section">

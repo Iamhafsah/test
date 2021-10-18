@@ -23,6 +23,9 @@ body{
   justify-content: center;
   align-items: center;
 }
+.left-part img{
+  max-width: 90%;
+}
 .right-section{
   padding:0 60px;
 }
