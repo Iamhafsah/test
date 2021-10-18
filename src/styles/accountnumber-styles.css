@@ -4,8 +4,8 @@
     margin-bottom: 48px;
   }
   .account-input{
-    margin-right: 80px;
     outline: none;
+    display: block;
   }
   .account-input, .select{
     border-radius: 12px;
@@ -17,8 +17,11 @@
   .account-input:hover, .select:hover{
     border-color: #006AFF;
   }
-
+  .account-number-form .account-input{
+    margin-bottom: -1em;
+  }
 /* media queries */
+
 @media screen and (max-width: 500px) {
   .account-input{
     padding: 14px 5px;
@@ -35,5 +38,6 @@
   .account-number-form{
     display: flex;
     align-items: center;
+    justify-content: space-between;
   }
 }

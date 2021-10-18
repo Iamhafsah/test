@@ -8,6 +8,9 @@ const Button = ({text, extraStyle, logout, isVerified}) => {
     const onHandleClick = (e) => {
         e.preventDefault();
         if(isVerified === true)setStep(step + 1)
+        else{
+            alert("Please ensure that form inputs are not empty")
+        }
     }
 
     return (

@@ -10,7 +10,7 @@ const onboardingSteps = [
 
 const OnboardingSteps = ({activeStep, setActiveStep}) => {
     return (
-        <div>
+        <div className="onboarding-div">
 
         <ul className="onboarding-steps">
             {onboardingSteps.map(step => {

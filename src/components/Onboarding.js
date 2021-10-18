@@ -3,6 +3,7 @@ import Button from "../utils/Button";
 import OnboardingSteps from "./OnboardingSteps";
 import SwitchPages from "./SwitchPages";
 
+
 export const stepContext = createContext();
 
 
@@ -14,7 +15,8 @@ function Onboarding() {
     <div className="page-container">
 
     {/* the blue part at the left */}
-    <div className="blue-part">
+    <div className="left-part">
+      <img src="../assets/card-image.png" alt="hand and cards on a table" />
     </div>
 
     <section className="right-section">

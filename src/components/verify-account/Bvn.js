@@ -51,9 +51,12 @@ const Bvn = () => {
             
             </div>
 
-            <HorizontalBorder/>
+            {showBvn && <>
+                <HorizontalBorder/>
 
-            <Button text="Continue" isVerified={bvnVerified}/>
+                <Button text="Continue" isVerified={bvnVerified}/>
+            </>}
+           
         </>
     )
 }

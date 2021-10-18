@@ -14,7 +14,7 @@ const SocialHandles = () => {
         <form className="social-handles">
             <h2>Social Handles</h2>
             <p>Enter your business social media handles</p>
-
+            
             {/* abeg tag */}
             <div>
             <Input

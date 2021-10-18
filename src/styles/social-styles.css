@@ -16,19 +16,25 @@
   .social-media{
     display: flex;
   }
-  .social-handles .social-media{
-    margin-bottom: 30px;
-  }
   .social-media input{
     margin-bottom: 1em;
   }
-  .twitter-input{
-    margin-right: 0;
+  .social-media  input{
+    margin-right: 50px;
+  }
+  .social-media .twitter-input{
+    margin-right: 0px;
   }
 
 /* media queries */
 @media screen and (max-width: 500px) {
   .social-media{
     flex-direction: column;
+  }
+  .social-media input{
+    margin-bottom: 0px;
+  }
+  .social-handles .social-media{
+    margin-bottom: 30px;
   }
 }
