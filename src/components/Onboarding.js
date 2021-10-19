@@ -31,9 +31,7 @@ function Onboarding() {
 
         {/* The different steps of the form */}
         <SwitchPages step={step}/>
-        {/* <SwitchPages step={step} onHandleClick={onHandleClick}/> */}
-
-        </section>
+      </section>
     </div>
     </stepContext.Provider>
   );
